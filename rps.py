@@ -19,7 +19,7 @@ while(True):
         print("It's a tie!")
         user_count+=1
         computer_count+=1
-        
+
     elif (user_input=='rock' and computer_choice=='scissors') or (user_input=='scissors' and computer_choice=='paper') or (user_input=='paper' and computer_choice=='rock'):
         print("You win!")
         user_count+=1
@@ -29,4 +29,4 @@ while(True):
 
     print("You won ",user_count," times.")
     print("Computer won ",computer_count," times.")
-    print("Well playes!")
+    print("Well played!")
