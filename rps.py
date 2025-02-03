@@ -6,7 +6,7 @@ options=["rock","paper","scissors"]
 while(True):
     user_input=input("Type Rock/ Paper or Scissors. Q to quit the game.\n").lower()
     if user_input=='Q':
-        quit()
+        break
     if user_input not in options:
         print("Plese enter the valid option: ")
         continue 
