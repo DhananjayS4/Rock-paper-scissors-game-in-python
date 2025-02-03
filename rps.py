@@ -1,13 +1,16 @@
 import random 
+import time
 user_count= 0
 computer_count=0
 options=["rock","paper","scissors"]
 
 while(True):
     user_input=input("Type Rock/ Paper or Scissors. Q to quit the game.\n").lower()
-    if user_input=='Q':
-        quit()
-    if user_input not in options:
+    if user_input=='q':
+        print("Thank you for playing! This window will automatically close in 5 seconds.")
+        time.sleep(5)
+        break
+    elif user_input not in options:
         print("Plese enter the valid option: ")
         continue 
 
