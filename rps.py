@@ -16,12 +16,13 @@ def score():
         print("\n")
 
 print("Computer: Hello there! Let's play ^-^\n")
+
 while(True):
     user_input=input("Type Rock, Paper or Scissors. Type Q to exit the game.\n>> ").lower()
 
     if user_input=='q':
         print("Thank you for playing! This window will automatically close in 5 seconds.")
-        print("This was fun! See you soon! ;)")
+        print("Computer: This was fun! See you soon! ;)")
         time.sleep(5)
         break
 
@@ -34,14 +35,14 @@ while(True):
         continue 
 
     computer_choice=random.choice(options)
-    print(f"\nComputer's choice: {computer_choice}")
+    print(f"\nComputer chose {computer_choice.capitalize()}!")
 
     if user_input==computer_choice:
-        print("It's a draw!")
+        print("It's a Draw!")
         print(f"\nComputer: {random.choice(draw)}\n")
 
     elif (user_input=='rock' and computer_choice=='scissors') or (user_input=='scissors' and computer_choice=='paper') or (user_input=='paper' and computer_choice=='rock'):
-        print("You win!")
+        print("You Win!")
         user_count+=1
         print(f"\nComputer: {random.choice(uwin)}\n")
     else:
