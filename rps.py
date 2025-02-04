@@ -18,6 +18,7 @@ def score():
 print("Computer: Hello there! Let's play ^-^\n")
 
 while(True):
+  main
     user_input=input("Type Rock, Paper or Scissors. Type Q to exit the game.\n>> ").lower()
 
     if user_input=='q':
